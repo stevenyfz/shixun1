@@ -1,0 +1,1714 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<script src="js/jquery/2.0.0/jquery.min.js"></script>
+    <link href="css/bootstrap/3.3.6/bootstrap.min.css" rel="stylesheet">
+    <script src="js/bootstrap/3.3.6/bootstrap.min.js"></script>
+    <script src="js/vue/2.5.16/vue.min.js"></script>
+    <script src="js/axios/0.17.1/axios.min.js"></script>
+    <script src="js/moment/2.22.2/moment.js"></script><!-- 日期格式化 -->
+    <link href="css/fore/style.css" rel="stylesheet"><!-- 前台页面样式 -->
+</head>
+  
+<style>
+
+</style>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<nav class="top ">
+        <a href="#nowhere">
+            <span class="glyphicon glyphicon-home redColor"></span>
+            京东首页
+        </a> 
+            
+        <span class="pull-right">欢迎使用京东
+		<a href="#nowhere">你好，请登录</a>
+            <a href="#nowhere">免费注册</a> 
+			 <a href="#nowhere">我的订单</a>
+            <a href="#nowhere">我的京东</a>
+            <a href="#nowhere">京东会员</a> 
+			<a href="#nowhere">企业采购</a> 
+			<a href="#nowhere">客户服务</a> 
+			<a href="#nowhere">网站导航</a> 
+			<a href="#nowhere">手机京东</a> 
+	
+		</span>
+		</nav>
+          <a href="#nowhere">
+        <img id="logo" src="img/site/dog8.gif" class="logo">
+    </a>
+     
+    <form  method="post" >   
+        <div class="searchDiv">
+            <input name="keyword" type="text" placeholder="好孩子婴儿推车 ">
+            <button  type="button" class="searchButton">搜索</button>
+            <div class="searchBelow">
+                 
+                        <span>
+                            <a href="#nowhere">
+                                新品
+                            </a>
+                                             
+                                <span>|</span>             
+                             
+                        </span>          
+                     
+                        <span>
+                            <a href="#nowhere">
+                                电脑数码
+                            </a>
+                                             
+                                <span>|</span>             
+                             
+                        </span>          
+                     
+                        <span>
+                            <a href="#nowhere">
+                                牛奶
+                            </a>
+                                             
+                                <span>|</span>             
+                             
+                        </span>          
+                     
+                        <span>
+                            <a href="#nowhere">
+                                冰箱
+                            </a>
+                             
+                        </span>          
+                     
+            </div>
+        </div>
+    </form>  
+ 
+<title>MF京东官网</title>
+ 
+<div class="homepageDiv">
+     
+<script>
+$(function(){
+    $("div.eachCategory").mouseenter(function(){
+        var cid = $(this).attr("cid");
+        $("div.productsAsideCategorys[cid="+cid+"]").show();
+    });
+    $("div.eachCategory").mouseleave(function(){
+        var cid = $(this).attr("cid");
+        $("div.productsAsideCategorys[cid="+cid+"]").hide();       
+         
+    });
+     
+    $("div.productsAsideCategorys").mouseenter(function(){
+        $(this).show();
+    });
+     
+    $("div.productsAsideCategorys").mouseleave(function(){
+        $(this).hide();
+    });
+     
+    $("div.rightMenu span").mouseenter(function(){
+        var left = $(this).position().left;
+        var top = $(this).position().top;
+        var width = $(this).css("width");
+        var destLeft = parseInt(left) + parseInt(width)/2;
+        $("img#catear").css("left",destLeft);
+        $("img#catear").css("top",top-20);
+        $("img#catear").fadeIn(500);
+                 
+    });
+    $("div.rightMenu span").mouseleave(function(){
+        $("img#catear").hide();
+    });
+     
+    var left = $("div#carousel-of-product").offset().left;
+    $("div.categoryMenu").css("left",left-20);
+    $("div.categoryWithCarousel div.head").css("margin-left",left);
+    $("div.productsAsideCategorys").css("left",left-20);
+     
+});
+</script>
+ 
+<img src="img/site/catear.png" id="catear" class="catear"/>
+     
+<div class="categoryWithCarousel">
+ 
+<div class="headbar show1">
+    <div class="head ">
+     
+        <span style="margin-left:10px" class="glyphicon glyphicon-th-list"></span>
+        <span style="margin-left:10px" >商品分类</span>
+         
+    </div>
+     
+    <div class="rightMenu">
+        <span><a href="#nowhere"><img src="img/site/秒杀.png"/></a></span>
+        <span><a href="#nowhere"><img src="img/site/优惠券.png"/></a></span>
+ 
+                <span>
+                <a href="#nowhere">
+                    新品
+                </a></span>        
+             
+                <span>
+                <a href="#nowhere">
+                    笔记本电脑
+                </a></span>        
+             
+                <span>
+                <a href="#nowhere">
+                    牛奶
+                </a></span>        
+             
+                <span>
+                <a href="#nowhere">
+                    冰箱
+                </a></span>        
+             
+    </div>
+     
+</div>
+ 
+<div style="position: relative">
+     
+<div class="categoryMenu">
+         
+            <div cid="83" class="eachCategory">
+                <span class="glyphicon glyphicon-link"></span>
+                <a href="#nowhere">
+                    平板电脑
+                </a>
+            </div>
+         
+            <div cid="80" class="eachCategory">
+                <span class="glyphicon glyphicon-link"></span>
+                <a href="#nowhere">
+                    热水器
+                </a>
+            </div>
+         
+            <div cid="78" class="eachCategory">
+                <span class="glyphicon glyphicon-link"></span>
+                <a href="#nowhere">
+                    吸尘器
+                </a>
+            </div>
+         
+           
+         
+    </div> 
+</div>
+ 
+<div style="position: relative;left: 0;top: 0;">
+     
+<script>
+$(function(){
+    $("div.productsAsideCategorys div.row a").each(function(){
+        var v = Math.round(Math.random() *6);
+        if(v == 1)
+            $(this).css("color","#87CEFA");
+    });
+});
+ 
+</script>
+ 
+    <div cid="83" class="productsAsideCategorys">
+      
+            <div class="row show1">
+                 
+                        <a href="#nowhere">
+                             
+                                    大影院
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    周末
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    新品特惠
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    32吋电视机
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    智能网络
+                                 
+                        </a>
+                     
+                <div class="seperator"></div>
+            </div>       
+         
+            <div class="row show1">
+                 
+                        <a href="#nowhere">
+                             
+                                    USB高清解
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    芒果TV在线
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    抢购价
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    USB解码
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    32英吋
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    10核
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    TCL品牌日
+                                 
+                        </a>
+                     
+                <div class="seperator"></div>
+            </div>       
+         
+            <div class="row show1">
+                 
+                        <a href="#nowhere">
+                             
+                                    不要赠品
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    新品上市
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    4K硬屏
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    领100元券
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    智能高清
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    8月，酷暑
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    8月大促
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    京东定制
+                                 
+                        </a>
+                     
+                <div class="seperator"></div>
+            </div>       
+         
+            <div class="row show1">
+                 
+                        <a href="#nowhere">
+                             
+                                    智能操作系统
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    金色外观
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    三星屏幕
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    客厅爆款
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    八核配置
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    限时特惠
+                                 
+                        </a>
+                     
+                <div class="seperator"></div>
+            </div>       
+         
+            <div class="row show1">
+                 
+                        <a href="#nowhere">
+                             
+                                    限时特惠
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    热销爆款
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    4K全高清
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    六核智能
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    14核4K
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    YUNOS
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    YUNOS
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    64位处理器
+                                 
+                        </a>
+                     
+                <div class="seperator"></div>
+            </div>       
+         
+            <div class="row show1">
+                 
+                        <a href="#nowhere">
+                             
+                                    YUNOS
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    微信电视
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    4k超清
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    64位真4K
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    10核机芯
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    V字黑釉底座
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    4K超清
+                                 
+                        </a>
+                     
+                <div class="seperator"></div>
+            </div>       
+         
+            <div class="row show1">
+                 
+                        <a href="#nowhere">
+                             
+                                    64位14核
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    海量影视
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    人气爆款
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    限时特惠
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    真4K屏
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    65吋巨屏
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    4K超清视界
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    限时特惠
+                                 
+                        </a>
+                     
+                <div class="seperator"></div>
+            </div>       
+         
+            <div class="row show1">
+                 
+                        <a href="#nowhere">
+                             
+                                    55寸旗舰
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    4K机皇
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    曲面机皇
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    轻薄4K
+                                 
+                        </a>
+                     
+                <div class="seperator"></div>
+            </div>       
+         
+    </div>           
+ 
+   
+         
+            
+ 
+    <div cid="80" class="productsAsideCategorys">
+      
+            <div class="row show1">
+                 
+                        <a href="#nowhere">
+                             
+                                    机控遥控
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    搪瓷超强内胆
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    人工智能
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    3D速热
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    热水器狂欢
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    3D动态加热
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    金圭经典
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    一级能效
+                                 
+                        </a>
+                     
+                <div class="seperator"></div>
+            </div>       
+         
+            <div class="row show1">
+                 
+                        <a href="#nowhere">
+                             
+                                    三档功率可调
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    送双立人刀
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    全胆半胆加热
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    爆款低价购
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    4倍迅热增容
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    人工智能
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    5昼夜保温
+                                 
+                        </a>
+                     
+                <div class="seperator"></div>
+            </div>       
+         
+            <div class="row show1">
+                 
+                        <a href="#nowhere">
+                             
+                                    官方正品
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    5昼夜保温
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    3KW速热
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    立减200
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    全国服务热线
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    8月26日
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    全国服务热线
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    wifi智能
+                                 
+                        </a>
+                     
+                <div class="seperator"></div>
+            </div>       
+         
+            <div class="row show1">
+                 
+                        <a href="#nowhere">
+                             
+                                    新品抢鲜购
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    新品上市
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    26号10点
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    最后一天
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    美的自营
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    限时48小时
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    准时预约
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    官方正品
+                                 
+                        </a>
+                     
+                <div class="seperator"></div>
+            </div>       
+         
+            <div class="row show1">
+                 
+                        <a href="#nowhere">
+                             
+                                    唱快淋漓
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    嗨爆8月
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    内胆自清洁
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    8月26号
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    疯抢48小时
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    爆款预售
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    26号10点
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    双2100瓦
+                                 
+                        </a>
+                     
+                <div class="seperator"></div>
+            </div>       
+         
+            <div class="row show1">
+                 
+                        <a href="#nowhere">
+                             
+                                    全国服务热线
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    嗨爆8月
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    高温抑菌
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    三档功率可调
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    三档功率可调
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    全网爆款
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    以旧换新
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    8月暑促
+                                 
+                        </a>
+                     
+                <div class="seperator"></div>
+            </div>       
+         
+            <div class="row show1">
+                 
+                        <a href="#nowhere">
+                             
+                                    整机8年保修
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    准时预约
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    WIFI智控
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    狂欢疯抢
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    疯抢48小时
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    8年包修
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    每日前100
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    8月26号
+                                 
+                        </a>
+                     
+                <div class="seperator"></div>
+            </div>       
+         
+            <div class="row show1">
+                 
+                        <a href="#nowhere">
+                             
+                                    每日前50
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    每日前100
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    限量抢熨烫机
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    品牌活动价
+                                 
+                        </a>
+                     
+                <div class="seperator"></div>
+            </div>       
+         
+    </div>           
+ 
+      
+ 
+    <div cid="78" class="productsAsideCategorys">
+      
+            <div class="row show1">
+                 
+                        <a href="#nowhere">
+                             
+                                    扫拖一体
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    新品上市
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    仿人跪式
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    非常夏日
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    纯铜电机
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    保修3年
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    经典爆款
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    无刷电机
+                                 
+                        </a>
+                     
+                <div class="seperator"></div>
+            </div>       
+         
+            <div class="row show1">
+                 
+                        <a href="#nowhere">
+                             
+                                    人气爆款
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    热销爆款
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    预定省420
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    源自美国
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    5000pa
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    一键清扫
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    拍下减200
+                                 
+                        </a>
+                     
+                <div class="seperator"></div>
+            </div>       
+         
+            <div class="row show1">
+                 
+                        <a href="#nowhere">
+                             
+                                    领券减50
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    强劲吸力
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    一千帕大吸力
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    天猫新风尚
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    智能规划清扫
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    8/22钜惠
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    全新升级归来
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    8月24日
+                                 
+                        </a>
+                     
+                <div class="seperator"></div>
+            </div>       
+         
+            <div class="row show1">
+                 
+                        <a href="#nowhere">
+                             
+                                    预定送配件
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    新品倾城
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    前七百名
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    预定送厨具
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    规划路径
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    真正爆款
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    终生保修
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    官方正品
+                                 
+                        </a>
+                     
+                <div class="seperator"></div>
+            </div>       
+         
+            <div class="row show1">
+                 
+                        <a href="#nowhere">
+                             
+                                    爆款升级
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    咨询限量送
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    淘金币开抢
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    人工智能
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    iAdapt
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    仿人工跪式
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    预订享特权
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    仿生学侦测
+                                 
+                        </a>
+                     
+                <div class="seperator"></div>
+            </div>       
+         
+            <div class="row show1">
+                 
+                        <a href="#nowhere">
+                             
+                                    超薄静音
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    陀螺仪导航
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    吸扫拖同步
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    真省320
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    扫吸擦一体
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    8/29
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    领券立减50
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    千帕吸力
+                                 
+                        </a>
+                     
+                <div class="seperator"></div>
+            </div>       
+         
+            <div class="row show1">
+                 
+                        <a href="#nowhere">
+                             
+                                    预定送陶瓷刀
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    机器人节
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    千帕吸力
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    钟汉良推荐
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    咨询领券
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    WIFI智控
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    数码无刷电机
+                                 
+                        </a>
+                     
+                        <a href="#nowhere">
+                             
+                                    爆款升级
+                                 
+                        </a>
+                     
+                <div class="seperator"></div>
+            </div>       
+         
+    </div>           
+ 
+
+ 
+</div>
+ 
+<div id="carousel-of-product"  class="carousel-of-product carousel slide1" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-of-product" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-of-product" data-slide-to="1"></li>
+    <li data-target="#carousel-of-product" data-slide-to="2"></li>
+    <li data-target="#carousel-of-product" data-slide-to="3"></li>
+  </ol>
+ 
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img class="carousel carouselImage" src="img/lunbo/1.jpg" width="100%"  height="100%">
+    </div>
+    <div class="item">
+      <img  class="carouselImage" src="img/lunbo/2.jpg" width="100%"  height="100%">
+    </div>
+    <div class="item">
+        <img  class="carouselImage" src="img/lunbo/3.jpg" width="100%"  height="100%">
+    </div>
+ 
+    <div class="item">
+        <img  class="carouselImage" src="img/lunbo/4.jpg" width="100%"  height="100%">
+    </div>
+ 
+  </div>
+ 
+  <!-- Controls -->
+<!--   <a class="left carousel-control" href="#carousel-of-product" role="button" data-slide="prev"> -->
+<!--     <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> -->
+ 
+<!--   </a> -->
+<!--   <a class="right carousel-control" href="#carousel-of-product" role="button" data-slide="next"> -->
+<!--     <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> -->
+ 
+<!--   </a> -->
+ 
+</div>   
+ 
+<div class="carouselBackgroundDiv">
+</div>
+ 
+</div>
+ 
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ 
+<div class="homepageCategoryProducts">
+     
+            <div class="eachHomepageCategoryProducts">
+                <div class="left-mark"></div>
+                <span class="categoryTitle">平板电视</span>
+                <div style="clear:both"></div>
+                 
+                        <div class="productItem" >
+                            <a href="#nowhere"><img width="100px" src="img/productSingle_middle/676.jpg"></a>
+                            <a class="productItemDescLink" href="#nowhere">
+                                <span class="productItemDesc">[热销]
+                                3k屏PANDA/熊猫 LE39D71S
+                                </span>
+                            </a>
+                            <span class="productPrice">
+                                1,874.25
+                            </span>
+                        </div>
+                                     
+                        <div class="productItem" >
+                            <a href="#nowhere"><img width="100px" src="img/productSingle_middle/665.jpg"></a>
+                            <a class="productItemDescLink" href="#nowhere">
+                                <span class="productItemDesc">[热销]
+                                Changhong/长虹 65S1智能电视
+                                </span>
+                            </a>
+                            <span class="productPrice">
+                                3,824.16
+                            </span>
+                        </div>
+                                     
+                        <div class="productItem" >
+                            <a href="#nowhere"><img width="100px" src="img/productSingle_middle/654.jpg"></a>
+                            <a class="productItemDescLink" href="#nowhere">
+                                <span class="productItemDesc">[热销]
+                                Hisense/海信 LED40EC53
+                                </span>
+                            </a>
+                            <span class="productPrice">
+                                1,439.40
+                            </span>
+                        </div>
+                                     
+                        <div class="productItem" >
+                            <a href="#nowhere"><img width="100px" src="img/productSingle_middle/643.jpg"></a>
+                            <a class="productItemDescLink" href="#nowhere">
+                                <span class="productItemDesc">[热销]
+                                Hisense/海信 LED49EC32
+                                </span>
+                            </a>
+                            <span class="productPrice">
+                                1,679.40
+                            </span>
+                        </div>
+                                     
+                        <div class="productItem" >
+                            <a href="#nowhere"><img width="100px" src="img/productSingle_middle/632.jpg"></a>
+                            <a class="productItemDescLink" href="#nowhere">
+                                <span class="productItemDesc">[热销]
+                                Konka/康佳 LED32S1卧室32
+                                </span>
+                            </a>
+                            <span class="productPrice">
+                                1,104.35
+                            </span>
+                        </div>
+                                     
+                <div style="clear:both"></div>
+            </div>
+         
+            <div class="eachHomepageCategoryProducts">
+                <div class="left-mark"></div>
+                <span class="categoryTitle">马桶</span>
+                <div style="clear:both"></div>
+                 
+                        <div class="productItem" >
+                            <a href="#nowhere"><img width="100px" src="img/productSingle_middle/1324.jpg"></a>
+                            <a class="productItemDescLink" href="#nowhere">
+                                <span class="productItemDesc">[热销]
+                                纳蒂兰卡 1082卫浴洁具 钻石切边 坐
+                                </span>
+                            </a>
+                            <span class="productPrice">
+                                1,710.00
+                            </span>
+                        </div>
+                                     
+                        <div class="productItem" >
+                            <a href="#nowhere"><img width="100px" src="img/productSingle_middle/1313.jpg"></a>
+                            <a class="productItemDescLink" href="#nowhere">
+                                <span class="productItemDesc">[热销]
+                                德国DGPOSY超漩式彩色马桶缓降坐便器
+                                </span>
+                            </a>
+                            <span class="productPrice">
+                                1,799.25
+                            </span>
+                        </div>
+                                     
+                        <div class="productItem" >
+                            <a href="#nowhere"><img width="100px" src="img/productSingle_middle/1302.jpg"></a>
+                            <a class="productItemDescLink" href="#nowhere">
+                                <span class="productItemDesc">[热销]
+                                纳蒂兰卡1066卫浴漩冲虹吸式马桶350
+                                </span>
+                            </a>
+                            <span class="productPrice">
+                                1,503.00
+                            </span>
+                        </div>
+                                     
+                        <div class="productItem" >
+                            <a href="#nowhere"><img width="100px" src="img/productSingle_middle/1291.jpg"></a>
+                            <a class="productItemDescLink" href="#nowhere">
+                                <span class="productItemDesc">[热销]
+                                箭牌马桶/ARROW AB1118硬盖
+                                </span>
+                            </a>
+                            <span class="productPrice">
+                                1,482.00
+                            </span>
+                        </div>
+                                     
+                        <div class="productItem" >
+                            <a href="#nowhere"><img width="100px" src="img/productSingle_middle/1280.jpg"></a>
+                            <a class="productItemDescLink" href="#nowhere">
+                                <span class="productItemDesc">[热销]
+                                乐洁士智能马桶高品质全自动遥控感应一体式
+                                </span>
+                            </a>
+                            <span class="productPrice">
+                                8,512.00
+                            </span>
+                        </div>
+                                     
+                <div style="clear:both"></div>
+            </div>
+         
+    <img id="endpng" class="endpng" src="img/site/end.png">
+ 
+</div>   
+</div>
+ 
+<div class="modal " id="loginModal" tabindex="-1" role="dialog" >
+    <div class="modal-dialog loginDivInProductPageModalDiv">
+            <div class="modal-content">
+                    <div class="loginDivInProductPage">
+                        <div class="loginErrorMessageDiv">
+                            <div class="alert alert-danger" >
+                              <button type="button" class="close" data-dismiss="alert" aria-label="Close"></button>
+                                <span class="errorMessage"></span>
+                            </div>
+                        </div>
+                             
+                        <div class="login_acount_text">账户登录</div>
+                        <div class="loginInput " >
+                            <span class="loginInputIcon ">
+                                <span class=" glyphicon glyphicon-user"></span>
+                            </span>
+                            <input id="name" name="name" placeholder="手机/会员名/邮箱" type="text">        
+                        </div>
+                         
+                        <div class="loginInput " >
+                            <span class="loginInputIcon ">
+                                <span class=" glyphicon glyphicon-lock"></span>
+                            </span>
+                            <input id="password" name="password"  type="password" placeholder="密码" type="text">          
+                        </div>
+                                    <span class="text-danger">请输入账号密码</span><br><br>
+                        <div>
+                            <a href="#nowhere">忘记登录密码</a>
+                            <a href="#nowhere" class="pull-right">免费注册</a>
+                        </div>
+                        <div style="margin-top:20px">
+                            <button class="btn btn-block redButton loginSubmitButton" type="button">登录</button>
+                        </div>
+                    </div>   
+          </div>
+    </div>
+</div>
+ 
+<div class="modal" id="deleteConfirmModal" tabindex="-1" role="dialog" >
+    <div class="modal-dialog deleteConfirmModalDiv">
+       <div class="modal-content">
+          <div class="modal-header">
+            <button data-dismiss="modal" class="close" type="button"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+            <h4 class="modal-title">确认删除？</h4>
+          </div>
+          <div class="modal-footer">
+            <button data-dismiss="modal" class="btn btn-default" type="button">关闭</button>
+            <button class="btn btn-primary deleteConfirmButton" id="submit" type="button">确认</button>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+ 
+<div id="footer"  class="footer" style="display: block;">
+     
+    <div id="footer_ensure" class="footer_ensure">
+            <a href="#nowhere">
+                <img src="img/site/dkhs.png">
+            </a>
+    </div>
+     
+    <div id="footer_desc" class="footer_desc">
+            <div class="descColumn">
+                <span class="descColumnTitle">购物指南</span>
+                <a href="#nowhere" >免费注册</a>
+                <a href="#nowhere" >开通支付宝</a>
+                <a href="#nowhere" >支付宝充值</a>
+            </div>
+            <div class="descColumn">
+                <span class="descColumnTitle">保障体系</span>
+                <a href="#nowhere" >发票保障</a>
+                <a href="#nowhere" >售后规则</a>
+                <a href="#nowhere" >缺货赔付</a>
+            </div>
+            <div class="descColumn">
+                <span class="descColumnTitle">支付方式</span>
+                <a href="#nowhere" >快捷支付</a>
+                <a href="#nowhere" >信用卡</a>
+                <a href="#nowhere" >蚂蚁花呗</a>
+                <a href="#nowhere" >货到付款</a>
+            </div>
+            <div class="descColumn">
+                <span class="descColumnTitle">商家服务</span>
+                <a href="#nowhere" >商家入驻</a>
+                <a href="#nowhere" >商家中心</a>
+                <a href="#nowhere" >物流服务</a>   
+                <a href="#nowhere" >运营服务</a>
+            </div>
+            <div class="descColumn">
+                <span class="descColumnTitle">手机京东</span>
+                <a href="#nowhere" ><img src="img/site/ma.png"></a>
+            </div>
+             
+    </div>
+     
+    <div style="clear:both"></div>
+     
+    <img id="cateye" class="cateye" src="img/site/cateye.png">
+     
+    <div id="copyright" class="copyright">
+        <div class="white_link" >
+            <a href="#nowhere" >关于京东</a>
+            <a href="#nowhere" > 帮助中心</a>
+            <a href="#nowhere" >开放平台</a>
+            <a href="#nowhere" >  诚聘英才</a>
+            <a href="#nowhere" >联系我们</a>
+            <a href="#nowhere" >网站合作</a>
+            <a href="#nowhere" >法律声明</a>
+            <a href="#nowhere" >知识产权</a>
+            <a href="#nowhere" >  廉正举报    </a>
+        </div>
+        <div class="white_link" >
+            <a href="#nowhere" > 京东集团</a><span class="slash">|</span>
+            <a href="#nowhere" > 京东物流</a><span class="slash">|</span>
+            <a href="#nowhere" >  聚划算</a><span class="slash">|</span>
+            <a href="#nowhere" >全球速卖通</a><span class="slash">|</span>
+            <a href="#nowhere" >1688</a><span class="slash">|</span>
+            <a href="#nowhere" >   万维网 </a><span class="slash">|</span>
+            <a href="#nowhere" >  腾讯  </a><span class="slash">|</span>
+            <a href="#nowhere" >优酷   </a><span class="slash">|</span>
+            <a href="#nowhere" >  友盟  </a><span class="slash">|</span>
+            <a href="#nowhere" >  虾米音乐  </a><span class="slash">|</span>
+            <a href="#nowhere" >  千千静听    </a><span class="slash">|</span>
+  
+            <a href="#nowhere" >  京东白条         </a>
+        </div>
+     
+        <div class="license">
+            <span>京公安网备： 1100020013</span>
+            <span>京ICP证242352525号</span>
+            <span>互联网文化经营许可证：2014【06】号 </span>
+            <span>互联网药品信息服务资质证书编号：浙-（经营性）-2012-0005</span>
+            <div class="copyRightYear">? 2003-2016 JD.COM 版权所有</div>
+            <div>
+                <img src="img/site/copyRight1.jpg">
+                <img src="img/site/copyRight2.jpg">
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+ 
+?<style>
+  span.how2jcopyrightspan1{
+    font-weight:bold;
+  }
+ 
+  span.how2jcopyrightspan1 a{
+    color:blue;
+  }
+ 
+  span.how2jcopyrightspan1 a:hover{
+    color:#C40000;
+  }
+ 
+  span.how2jcopyrightspan2{
+    color:red;
+       
+  }
+  div.how2jcopyrightDiv{
+    width:500px;
+    margin:0px auto;
+    text-align:center;
+  }
+</style>
+
+			
+       
+            
+</nav>
+</html>
