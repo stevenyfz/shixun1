@@ -1,0 +1,443 @@
+html,body,ul,ol,li,dl,dd,dt,p,h1,h2,h3,h4,h5,h6,form,fieldset,legend,img{
+	margin: 0;
+	padding: 0;
+}
+fieldset,img,input,button{
+	border: none;
+	margin: 0;
+	padding: 0;
+	outline-style: none;
+}
+ul,ol{
+	list-style: none;
+}
+input{
+	padding-top: 0;
+	padding-bottom: 0;
+	font-family: simsun,"宋体";
+}
+select,input{
+	vertical-align: middle;
+}
+select,input,textarea{
+	font-size: 12px;
+	margin: 0;
+}
+textarea{
+	resize: none;
+}
+img{
+	border: 0;
+	vertical-align: middle;
+}
+table{
+	border-collapse: collapse;
+}
+body{
+	font: 12px/150% arial,verdana,"\5b8b\4f53";
+	color: #666;
+	background: #fff;
+}
+.clearfix:before,.clearfix:after{
+	content: "";
+	display: table;
+}
+.clearfix:after{
+	clear: both;
+}
+.clearfix{
+	*zoom: 1;
+}
+a{
+	color: #666;
+	text-decoration: none;
+}
+a:hover{
+	color: #C81623;
+}
+h1,h2,h3,h4,h5,h6{
+	text-decoration: none;
+	font-weight: normal;
+}
+s,i,em{
+	font-style: normal;
+	text-decoration: none;
+}
+.col-red{
+	color: #C81623 !important;
+}
+/*公共类*/
+.w{
+	width: 1210px;
+	margin: 0 auto;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.al{
+	text-align: left;
+}
+.ac{
+	text-align: center;
+}
+.ar{
+	text-align: right;
+}
+.hide{
+	display: none;
+}
+.shortcut{
+	height: 30px;
+	width: 100%;
+	line-height: 30px;
+	background: #f1f1f1;
+}
+/*下拉三角形的制作样式*/
+.shortcut .dt,.shortcut .fore
+{
+	position: relative;
+	padding: 0 25px 0 10px;
+}
+ .shortcut .dt i,.fore i
+ {
+	position: absolute;
+	font: 400 15px/15px "宋体";
+	font-weight: bold;
+	right: 7px;
+    top: 13px;
+	height: 7px;
+	width: 15px;
+	overflow: hidden;
+}
+ .shortcut .dt s,.fore s
+ {
+	position: absolute;
+	left: 0;
+	top: -8px;
+}
+.fr li{
+	float: left;
+	padding: 0 10px;
+	
+}
+.fr .line{
+	width: 1px;
+	height: 12px;
+	background-color: #ddd;
+	margin-top: 9px;
+	padding: 0;
+}
+.shortcut .tel_jd{
+	padding: 0 20px 0 25px;
+
+}
+.tel{
+	position: absolute;
+	top: 5px;
+	left: 5px;
+    width: 15px;
+    height: 20px;
+	background: url(../img/images/sprite_01.jpg) no-repeat;
+}
+.mask{
+	display: none;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.5);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+}
+.box{
+	display: none;
+	width: 400px;
+	height: 250px;
+	background-color: #fff;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin: -125px 0 0 -200px;
+	z-index: 1000;
+}
+.box .close_all{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	width: 15px;
+	height: 15px;
+	font-size: 15px;
+	color: #000;
+	cursor: pointer;
+}
+
+.banner{
+	width: 1210px;
+	height: 80px ;
+	margin: 0 auto;
+	background: url(../img/images/topbanner.jpg) no-repeat;
+	position: relative;
+}
+.banner h3{
+	text-indent: -999em;
+}
+.banner #jd_close{
+	position: absolute;
+	top: 0;
+	left: 1192px;
+	height: 18px;
+	width: 18px;
+	text-align: center;
+	color: red;
+	background: url(../img/images/china_04.jpg) no-repeat;
+}
+.sousuo .logo .jd_a{
+	float: left;
+	background: url(../img/images/logo.png) no-repeat;
+	display: block;
+	width: 270px;
+	height: 60px;
+	text-indent: -9999em;
+	margin-top: 20px;
+}
+.sousuo .logo .db11{
+	float: left;
+}
+.sousuo .search{
+	width: 538px;
+	height: 35px;
+	float: left;
+	margin-top: 25px;
+}
+.sousuo .search input{
+	width: 450px;
+	height: 32px;
+	border: 2px solid #B61D1D;
+	padding-left: 4px;
+	color: #666;
+	font: 14px/32px "微软雅黑";
+	float: left;
+}
+.sousuo .search button{
+	width: 80px;
+	height: 36px;
+	background: #B61D1D;
+	cursor: pointer;
+	color: #fff;
+	font: 16px/36px "微软雅黑";
+	float: left;
+}
+.sousuo .car{
+	width: 96px;
+	height: 34px;
+	background: #fff;
+	float: right;
+	margin-top: 25px;
+	padding-left: 43px;
+	border: 1px solid #666666;
+	line-height: 34px;
+	position: relative;
+}
+span.icon1 {
+    background: url(../img/images/sprite_06.jpg) no-repeat;
+    top: 10px;
+    left: 20px;
+    position: absolute;
+    width: 16px;
+    height: 13px;
+}
+span.icon3{
+	position: absolute;
+	top: -4px;
+	left: 102px;
+	width: 11px;
+	height: 14px;
+	line-height: 14px;
+	padding-left: 3px;
+	background: #C81623;
+	color: #fff;
+	border-radius: 7px 7px 7px 0;
+}
+span.icon2{
+	position: absolute;
+	top: 10px;
+	left: 120px;
+	font: 14px/14px "微软雅黑";
+}
+.sousuo .tuijian{
+	width: 500px;
+	padding: 7px 0;
+	float: left;
+}
+.sousuo .tuijian li{
+	float: left;
+	padding-right: 10px;
+}
+.sousuo .tuijian li a{
+	color: #666;
+}
+.sousuo .tuijian a:hover{
+	color: #C81623;
+}
+/*头部结束*/
+/*nav部分*/
+.nav{
+	height: 44px;
+	border-bottom: 2px solid #B1191A;
+}
+.zuo{
+	width: 210px;
+	height: 44px;
+	float: left;
+	position: relative;
+	z-index: 10;
+}
+.zuo .dt a{
+	display: block;
+	height: 44px;
+	font: 400 15px/44px "微软雅黑";
+	color: #fff;
+	background: #B1191A;
+	padding-left: 10px;
+}
+.zuo .dd{
+	width: 210px;
+	height: 465px;
+	background: #C81623;
+	margin-top: 2px;	
+}
+.zuo .dd .items{
+	height: 31px;
+	line-height: 31px;
+	padding-left: 10px;
+	color: #fff;
+}
+.zuo .dd .items h3{
+	float: left;
+	font: 400 14px/31px "微软雅黑";
+}
+.zuo .dd .items span{
+	font-family: simsun;
+	font-weight: 600;
+	float: right;
+	padding-right: 10px;
+}
+.zhongbunav{
+	width: 735pxpx;
+	height: 44px;
+	float: left;
+}
+.zhongbunav li{
+	float: left;
+}
+.zhongbunav li.new{
+	background: url(../img/images/new.jpg) no-repeat right top;
+}
+.zhongbunav li a{
+	display: block;
+	font: 400 14px/44px "微软雅黑";
+	color: #000;
+	padding: 0 20px;
+}
+.zhongbunav li a:hover{
+	color: #C81623;
+}
+.bike{
+	height: 44px;
+	width: 140px;
+	float: right;
+	background: url(../img/images/bike.jpg) no-repeat;
+}
+.bike a{
+	display: block;
+}
+/*底部开始*/
+.guanggao{
+	background: #f5f5f5;
+	width: 100%;
+	height: 54px;
+	padding: 20px 0;
+	border-bottom: 1px solid #DDDDDD;
+}
+.guanggao li{
+	float: left;
+	padding-right: 110px;
+}
+li.last {
+    padding-right: 0;
+    margin-left: 304px;
+}
+.guanggao{
+	position: relative;
+}
+.item{
+	width: 302px;
+	position: absolute;
+	top: 20px;
+	left: 50%;
+}
+.guanggao1{
+	margin-left: -608px;
+}
+.guanggao2{
+	margin-left: -304px;
+}
+.guanggao33{
+	margin-left: 2px;
+}
+.zhinan{
+	margin-top: 30px;
+	height: 170px;
+	border-bottom: 1px solid #DDDDDD;
+}
+li.first{
+	font: 600 14px/14px "微软雅黑";
+	padding-bottom: 10px;
+}
+.zhinan .last{
+	margin-right: 0;
+	width: 204px;
+	height: 169px;
+	background: url(../img/images/china_02.jpg) no-repeat;
+}
+.zhinan .last .first{
+	text-align: center;
+	padding-top: 5px;
+}
+.zhinan .last .center{
+	padding: 0 5px;
+}
+.zhinan .last .xianqing{
+	padding-left: 135px;
+}
+.zhinan ul{
+	margin-right: 136px;
+	float: left;
+}
+.footer{
+	padding-bottom: 20px;
+}
+.links{
+	padding-top: 20px;
+	height: 25px;
+}
+.links .first{
+	line-height: 25px;
+}
+.links a{
+	padding: 0 12px;
+}
+.copyright{
+	text-align: center;
+	line-height: 18px;
+}
+.message{
+	text-align: center;
+	margin-top: 10px;
+}
+.message a{
+	margin-right: 10px;
+}

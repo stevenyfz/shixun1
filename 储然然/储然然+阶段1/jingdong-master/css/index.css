@@ -1,0 +1,237 @@
+.banner604{
+	position: relative;
+}
+.banner604 a{
+	height: 603px;
+	width: 1904px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: url(../img/images/banner.jpg) no-repeat top center;
+}
+.main{
+	position: relative;
+}
+.silder{
+	width: 730px;
+	height: 453px;
+	background: url(../img/images/slider1.jpg) no-repeat;
+	margin: 12px 0 0 220px;
+	float: left;
+	position: relative;
+}
+.silder .aaa{
+	display: block;
+	text-indent: -999em;
+	width: 730px;
+	height: 453px;
+}
+.circle{
+	position: absolute;
+	bottom: 8px;
+	left: 50%;
+	margin-left: -66px;
+}
+.circle li{
+	width: 18px;
+	height: 18px;
+	border-radius: 9px;
+	background: #3E3E3E;
+	float: left;
+	margin: 0 2px;
+	text-align: center;
+	line-height: 18px;
+	color: #fff;
+	cursor: pointer;
+}
+.silder .circle li:hover,.silder .circle li:first-child{
+	background: #B61B1F;
+	
+}
+.arrow_l{
+	width: 28px;
+	height: 62px;
+	background: rgba(0,0,0,.3);
+	text-align: center;
+	font: 500 20px/62px "微软雅黑";
+	color: #fff;
+	position: absolute;
+	top: 202px;
+	left: 0;
+}
+.arrow_r{
+	width: 28px;
+	height: 62px;
+	background: rgba(0,0,0,.3);
+	text-align: center;
+	font: 500 20px/62px "微软雅黑";
+	color: #fff;
+	position: absolute;
+	top: 202px;
+    left: 702px;
+}
+.arrow_l:hover,.arrow_r:hover{
+	background: rgba(0,0,0,.5);
+	color: #DDDDDD;
+}
+.news{
+	width: 248px;
+	height: 451px;
+	border: 1px solid #E4E4E4;
+	float: right;
+	margin-top: 12px;
+}
+.jd_new{
+	height: 200px;
+	border-bottom: 1px dashed #E4E4E4;
+}
+.news .jd_new .dt,.news .life .dt{
+	height: 43px;
+	border-bottom: 1px dotted #E8E8E7;
+	line-height: 43px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.news .jd_new .dt h3,.news .life .dt h3{
+	float: left;
+	font: 14px/43px "微软雅黑";
+}
+.news .jd_new .dt a{
+	float: right;
+	font: 13px/43px simsun;
+}
+.news .jd_new .dd ul{
+	padding-top: 8px;
+	padding-left: 15px;
+}
+.news .jd_new .dd li{
+	line-height: 28px;
+}
+.news .jd_new .dd li span{
+	font-weight: 700;
+	margin-right: 5px;
+}
+.news .life{
+	height: 251px;
+	width: 248px;
+}
+.news .life .dd li{
+	width: 61px;
+	height: 68px;
+	border: 1px solid #E4E4E4;
+	border-top: 0;
+	margin-left: -1px;
+	float: left;
+	text-align: center;
+}
+.news .life .dd li a{
+	display: block;
+	height: 68px;
+	padding-top: 42px;
+	position: relative;
+}
+.news .life .dd li i{
+	position: absolute;
+	width: 25px;
+	height: 24px;
+	top: 12px;
+	left: 16px;
+}
+.news .life .dd .a1 i{
+	background: url(../img/images/icon_lifeserv_02.jpg) no-repeat center top;
+}
+.news .life .dd .a2 i{
+	background: url(../img/images/icon_lifeserv_05.jpg) no-repeat center top;
+}
+.news .life .dd .a3 i{
+	background: url(../img/images/icon_lifeserv_08.jpg) no-repeat center top;
+}
+.news .life .dd .a4 i{
+	background: url(../img/images/icon_lifeserv_11.jpg) no-repeat center top;
+}
+.news .life .dd .a5 i{
+	background: url(../img/images/icon_lifeserv_14.jpg) no-repeat center top;
+}
+.news .life .dd .a6 i{
+	background: url(../img/images/icon_lifeserv_17.jpg) no-repeat center top;
+}
+.news .life .dd .a6 .song{
+	background: url(../img/images/song.png) no-repeat right top;
+}
+.news .life .dd .a7 i{
+	background: url(../img/images/icon_lifeserv_20.jpg) no-repeat center top;
+}
+.news .life .dd .a8 i{
+	background: url(../img/images/icon_lifeserv_23.jpg) no-repeat center top;
+}
+.news .life .dd .a8 .mian1{
+	background: url(../img/images/mian.png) no-repeat right top;
+}
+.news .life .dd .a9 i{
+	background: url(../img/images/icon_lifeserv_26.jpg) no-repeat center top;
+}
+.news .life .dd .a10 i{
+	background: url(../img/images/icon_lifeserv_29.jpg) no-repeat center top;
+}
+.news .life .dd .a11 i{
+	background: url(../img/images/icon_lifeserv_32.jpg) no-repeat center top;
+}
+.news .life .dd .a12 i{
+	background: url(../img/images/icon_lifeserv_35.jpg) no-repeat center top;
+}
+.huodong{
+	position: relative;
+}
+.huodong .night .night_l{
+	float: left;
+	margin: 10px 0 28px 0;
+}
+.huodong .night .night_r{
+	margin-top: 10px;
+	width: 1000px;
+	height: 160px;
+	float: right;
+	position: relative;
+}
+.huodong .night .night_r ul{
+	width: 500%;
+}
+.huodong .night .night_r li{
+	float: left;
+	margin-right: 1px;
+}
+.arrow_ll{
+	width: 28px;
+	height: 62px;
+	background: rgba(0,0,0,.2);
+	text-align: center;
+	font: 500 20px/62px "微软雅黑";
+	color: #fff;
+	position: absolute;
+	top: 45px;
+	left: 0;
+}
+.arrow_rr{
+	width: 28px;
+	height: 62px;
+	background: rgba(0,0,0,.2);
+	text-align: center;
+	font: 500 20px/62px "微软雅黑";
+	color: #fff;
+	position: absolute;
+	top: 45px;
+    left: 972px;
+}
+.arrow_l:hover,.arrow_r:hover{
+	background: rgba(0,0,0,.5);
+	color: #DDDDDD;
+}
+
+
+
+
+
+
+
+
+
