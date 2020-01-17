@@ -1,0 +1,146 @@
+body{width:1600px;margin:0 auto;background: #F7F7F7;}
+.mod_container{text-align: center}
+.header{width:100%;margin:0 auto;font-size: 14px}
+.h-ul{width:65%;margin:0 auto;text-align: right}
+.h-ul ul li{text-decoration: none;display: inline;padding-left:20px;padding-right: 20px}
+.h-ul ul li a{text-decoration: none;font-size: 12px;color:grey}
+.h-ul ul li a:hover{color:red}
+.middle{border:1px sloid red;width:70%;margin:0 auto;margin-top: 1%;height:550px; }
+.m1{width: 100%;margin:0 auto;}
+.m1-left{background: white;border:1px solid #EEEEEE;width:22%;float: left;margin-right:1%;text-align: left }
+.m1-left a{text-decoration: none;color: #141311}
+.m1-left a:hover{color:#F0768E}
+.m1-left ul{width:100%;margin:0 auto;padding-left: 0px;}
+.m1-left ul li{text-decoration: none;padding:5px 10px;list-style-type: none}
+.m1-left ul li:hover{background-color: rgba(98, 74, 244, 0.15)}
+#jiayong:hover{background-color: rgba(98, 74, 244, 0.15)}
+#jiayong:hover .jiayong{display: block}
+#shouji:hover{background-color: rgba(98, 74, 244, 0.15)}
+.m1-left ul li:hover .jiayong{display: block}
+.jiayong .u1{margin:20px 10px 10px 10px;font-size: 13px}
+.jiayong .u1 li{display: inline;background: black;color: white;margin-left: 10px}
+.u2 li{display: inline;font-size: 12px;color:grey;margin-left: 8px;padding-left: 0px;}
+.u2{margin:10px;}
+.jiayong .u1 li a{color:white}
+.jiayong .u1 li:hover{background: red;}
+.jiayong{width:650px; height:550px;display:none;background: white;border: 1px spid #EEEEEE;position:absolute;left:490px;top:155px}
+.bottom{height:10px;float: inherit}
+.line{border:1px sloid grey}
+.block ul li{display: block}
+.h-search{background: white;border:1px solid #EEEEEE;width:100%;margin:0 auto;padding:0px;text-align: center}
+.search{border:3px solid red;width:300px;margin-top: 20px}
+.h-search span{font-size: 13px;}
+.h-search a{text-decoration: none;color:red}
+.h-ul1 a{color:black;}
+.h-ul1 ul li{list-style: none;display: inline;padding-left: 20px;font-size: 16px}
+.h-ul1 a:hover{color:#F0768E}
+.b-a a:hover{background: #F7F7F7;}
+#m1-middle{float: left;background: white;border:1px solid #EEEEEE;width:53%;margin-right: 1%;height:520px}
+.m1-right{float:left;background:white;border:1px solid #EEEEEE;width:22%;height:520px}
+.li-hover0 ul{display: none;position: absolute;top:6.6%;right: 48%;padding: 10px 5px 10px 5px;text-align: left}
+.h-ul ul li ul li{line-height:20px;padding:0px 18px}
+.li-hover0:hover ul{display:block;background: white;border:1px solid #EEEEEE;}
+.li-hover1 ul{display: none;position: absolute;top:6.6%;right:30%;padding:10px 5px 10px 5px;text-align: left;}
+.li-hover1:hover ul{display: block;background: white;border:1px solid #EEEEEE;}
+.li-hover2 ul{display: none;position: absolute;top:6.6%;right:22%;padding:10px 5px 10px 5px;text-align: left;}
+.li-hover2:hover ul{display: block;background: white;border:1px solid #EEEEEE;}
+.wangzhan{display: none; position: absolute;top:6.6%;right:15%;padding:10px 0px;text-align:left}
+.li-hover3:hover .wangzhan{display: block;background: white;border: 1px solid #EEEEEE}
+.le{float: left;border-right: 1px solid #eeeeee;text-align: left;margin-left: -25px}
+.mi{float:left;border-right:1px solid #eeeeee;text-align: left;margin-left: -25px}
+.ri{float:left;text-align: left;margin-left: -25px}
+.round_icon{width:50px;height:50px;display: flex;border-radius: 50%;}
+.m1-right-top{margin:10px 10px 10px 30px;height:120px}
+.m1-right-top-img{float:left;margin-top: 8px}
+.m1-right-top-content{float: left;margin-left:20px;margin-top: 8px}
+.s1 a{font-size: 12px;color:grey;text-decoration: none}
+.s1 a:hover{color:red}
+.s2 a{font-size: 13px;color:black;text-decoration: none;}
+.s2 a:hover{color:red}
+.m1-right-top-button{width:100%;overflow: hidden;margin-top: -10px;font-size: 13px}
+.b1{border:1px soid red;background: red;color:white;borderleft-radius:50%;height: 30px;width:90px;border-radius: 50px}
+button:hover{background-color: rgba(230, 43, 64, 0.88)}
+.b2{border:1px soid red;background: black;color:goldenrod;height: 30px;width:90px;border-radius: 50px}
+.m1-right-bottom{margin-top:12px;width:100%;text-align: center;font-size: 12px;color: grey}
+.m1-right-bottom span{height:20px}
+.mbs1{float:left;margin:0px 10px 10px 20px;}
+.mbs2{margin:30px 10px 10px 10px;float: none;overflow: hidden;padding-bottom: 5px}
+.mbs3{float: right;margin:0px 20px 10px 10px;}
+.m1-right-bottom a{text-decoration: none;color: grey;font-size: 12px; }
+.mbs1 a:hover{border-bottom:2px solid red;}
+.mbs2 a:hover{border-bottom:2px solid red;}
+.mbs3 a:hover{border-bottom:2px solid red;}
+.middle1{width:70%;margin:0 auto;height:750px}
+.middle1-lay1{width:100%;height:48%;text-align: left}
+.middle1-lay2{width:100%;height:25%;margin-top: 1%}
+.middle1-lay3{width:100%;height: 25%;margin-top: 1%}
+.middle1-lay1-div1{position:relative;width:48%;height:48%;border:1px solid #EEEEEE;background:white;margin-right:3%;margin-bottom:2%;float: left}
+.middle1-lay1-div2{position:relative;width:48%;height:48%;border:1px solid  #EEEEEE;background:white;float:left}
+.middle1-lay1-div3{position:relative;width:48%;height:48%;border:1px solid  #EEEEEE;background:white;float: right;margin-left: 3.4%}
+.middle1-lay1-div4{position:relative;width:48%;height:48%;border:1px solid  #EEEEEE;background:white;float: right}
+.middle1-lay1-imgl{width:49%;height:100%;float:right;}
+.middle1-lay2-div1{position:relative;width:24%;height:100%;border:1px solid  #EEEEEE;background:white;float:left;margin-right: 1%}
+.middle1-lay2-div2{position:relative;width:24%;height:100%;border:1px solid  #EEEEEE;background:white;float:left;margin-right: 1%}
+.middle1-lay2-div3{position:relative;width:24%;height:100%;border:1px solid  #EEEEEE;background:white;float:left;margin-right: 1%}
+.middle1-lay2-div4{position:relative;width:24%;height:100%;border:1px solid  #EEEEEE;background:white;float:left}
+.middle1-lay3-div1{position:relative;width:24%;height:100%;border:1px solid  #EEEEEE;background:white;float:left;margin-right: 1%}
+.middle1-lay3-div2{position:relative;width:24%;height:100%;border:1px solid  #EEEEEE;background:white;float:left;margin-right: 1%}
+.middle1-lay3-div3{position:relative;width:24%;height:100%;border:1px solid  #EEEEEE;background:white;float:left;margin-right: 1%}
+.middle1-lay3-div4{position:relative;width:24%;height:100%;border:1px solid  #EEEEEE;background:white;float:left}
+.middle2{width:70%;margin:0 auto;height:80px;background: white;border:1px solid #EEEEEE;text-align: left}
+.middle2 ul li{list-style-type: none;float:left;text-align: center;margin-right: 100px}
+.middle2 a{text-decoration: none}
+.middle2 ul li:hover .middle2-ul-li-div1{color: red}
+.middle2 ul li:hover .middle2-ul-li-div2{color: red}
+.middle2 ul li:checked .middle2-ul-li-div1{background:red;color:white}
+.middle2 ul{padding-left: 120px}
+.middle2-ul-li-div1{font-weight: 700;font-size: 16px; color: black}
+.bottom{width:70%;margin:0 auto;font-size: 12px;height:200px}
+.middle2-ul-li-div2{font-size: 14px; color: grey}
+.bottim1{width:100%;border:1px solid black}
+.bottom1 ul li{list-style-type: none;}
+.bottom1 ul li a{color: #666;font-size: 12px;text-decoration: none}
+.bottom1 ul li{color: #666;font-size: 12px;text-decoration: none}
+.bottom1 ul li a:hover{color:red}
+.content1{width:16.5%;height:200px;float:left;text-align: left;line-height: 22px}
+.content2{width:16.5%;height:200px;float:left;text-align: left;line-height: 22px}
+.content3{width:16.5%;height:200px;float:left;text-align: left;line-height: 22px}
+.content4{width:16.5%;height:200px;float:left;text-align: left;line-height: 22px}
+.content5{width:16.5%;height:200px;float:left;text-align: left;line-height: 22px}
+.content6{width:16.5%;height:200px;float:left;text-align: left;line-height: 22px}
+.bottom2 ul li a{color: #666;font-size: 12px;text-decoration: none}
+.bottom2 ul li a:hover{color:red}
+.bottom2 ul li{list-style-type: none;float:left;margin-right: 20px}
+.bottom3{width:100%;margin:0 auto;text-align: center;margin-top: 20px;color: grey;line-height: 20px;margin-bottom: 50px}
+.bottom2{height:200px}
+.middle3{width:70%;margin:0 auto;text-align: center}
+.middle3 ul li{list-style-type: none;display: inline-block;width:19.5%;height:322px;background:white;border: 1px solid #EEEEEE}
+.middle3 ul{width:100%;padding-left: 0px}
+.single-tuijian{position:relative;width:100%;height:100%;text-align:center;margin-top: 0px;overflow: hidden}
+.buxihuan{position:absolute;top:10px;right:10px;width:16px;height:16px;display: none;}
+.buxihuan1{position:absolute;top:10px;right:10px;width:16px;height:16px;display: none;}
+.single-tuijian-middle1{position:absolute;top:36px;right:35px;width:150px;height:150px;margin:0 auto;margin-top: 10px;}
+.single-tuijian-bottom{position: absolute;bottom: 10px;color: red;text-align: left;margin:0px 15px}
+.single-tuijian-bottom p{font-size: 14px;color: grey}
+.single-tuijian-bottom span{font-size: 14px;font-weight: bold}
+.middle3 ul li a:hover .buxihuan{display: block}
+.buxihuan img:hover .buxihuan1{display: block}
+.middle3 ul li a:hover .single-tuijian-middle1 img{opacity: 70%;}
+.middle3 ul li a:hover .single-tuijian-bottom1 button{display: block}
+.middle3 ul li a:hover .single-tuijian-bottom{display: none}
+.single-tuijian-bottom1{position: absolute;bottom: 10px;color: red;text-align: left;margin:0px 15px}
+.single-tuijian-bottom1 button{margin-left: 45px;margin-bottom: 30px;color: white;background: black;font-size: 16px;height:40px;width:100px;border-radius: 50px;display: none}
+.single-tuijian-bottom1 button:hover{background: red}
+.lay1-div1-items{width:100%;height:90%;padding-top: 15px;overflow:hidden}
+.item_content{font-size: 18px;font-weight: 700;color: #333;margin-left: 25px;}
+.item_aside{font-size: 12px;color: #999;margin-left: 5px}
+.lay1-div1-items a{text-decoration: none}
+.lay1-div1-imgs{position: absolute;top:60px;left:8px;width:100%;margin-left: 15px}
+.lay1-div1-imgs img:hover{  opacity: 50%;}
+
+.lay1-div1-items1{width:100%;height:90%;padding-top: 15px;}
+.item_content1{font-size: 18px;font-weight: 700;color: #333;margin-left: -60px}
+.item_aside1{font-size: 12px;color: #999;margin-left: 5px}
+.lay1-div1-items1 a{text-decoration: none}
+.lay1-div1-imgs1{position: absolute;top:60px;left:15px;width:100%;margin-left:-16px}
+.lay1-div1-imgs1 img:hover{  opacity: 50%;}
